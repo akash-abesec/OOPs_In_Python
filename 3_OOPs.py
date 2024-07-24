@@ -1,6 +1,7 @@
 """
 del keyword :- Used to delete object properties or object itself.
 Ex:-
+"""
 class Student:
     def __init__(self, name):
         self.name = name
@@ -11,14 +12,14 @@ print(s1.name)
 print(s1)
 del s1.name
 del s1
-"""
+
 
 """
 # Private (like) Attributes and Methods :-
 Private attributes & Methods are meant to be used only within the class and are not accessible from outside the class
 "For making private we add two "__" before the attributes"
 Ex:-Public
-
+"""
 class Account:
     def __init__(self, acc_no, acc_pass):
         self.acc_no = acc_no
@@ -43,9 +44,8 @@ class Account:
 acc1 = Account("12345", "ABCDE")
 print(acc1.acc_no)
 print(acc1.reset_pass())
-"""
 
-"""
+
 class Person:
     __name = "anonymous"
 
@@ -58,12 +58,12 @@ class Person:
 
 p1 = Person()
 print(p1.Welcome())
-"""
+
 
 """
 # Inheritance :- When one class(child/derived) derives the properties & method of another class(parent/base).
 Ex:-
-
+"""
 
 class Car:
     @staticmethod
@@ -85,7 +85,7 @@ car2 = Toyota_car("Prius")
 print(car1.name)  # Fortune
 print(car1.Start())
 print(car2.Stop())
-"""
+
 
 """
 # 1.Single Inheritance :- Above example
@@ -105,7 +105,7 @@ print(car2.Stop())
 Ex:-
 """
 
-"""
+
 class Car:
     @staticmethod
     def start():
@@ -128,7 +128,7 @@ class Fortune(ToyotaCar):
 
 car1 = Fortune("Diesel")
 car1.start()
-"""
+
 
 """
 # 3.Multiple Inheritance :-
@@ -141,7 +141,7 @@ car1.start()
 Ex:-
 """
 
-"""
+
 class A:
     varA = "Welcome to class A"
 
@@ -158,5 +158,5 @@ c1 = C()
 print(c1.varA)
 print(c1.varB)
 print(c1.varC)
-"""
+
 
