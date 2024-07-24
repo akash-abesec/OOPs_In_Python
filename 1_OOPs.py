@@ -8,23 +8,22 @@ Class & Object in Python :- Class is a blueprint for creating objects.
 # creating class
 
 
-# class Students:
-#     name = "Karan Kumar"
-#
-#
-# # creating objects (instance)
-# s1 = Students()
-# print(s1.name)
-#
-#
-# # Ex:-
-# class Car:
-#     color: "blue"
-#     brand: "mercedes"
-#
-#
-# car1 = Car()
-# print(car1.color)  # blue
+class Students:
+    name = "Karan Kumar"
+
+
+# creating objects (instance)
+s1 = Students()
+print(s1.name)
+
+# Ex:-
+class Car:
+    color: "blue"
+    brand: "mercedes"
+
+
+car1 = Car()
+print(car1.color)  # blue
 """
 Constructor :- Constructors are generally used for instantiating an object. The task of constructors 
 is to initialize(assign values) to the data members of the class when an object of the class is created. 
@@ -34,15 +33,15 @@ __init__ Function :- All classes have a function called __init__() which is alwa
 
 """
 
-# Creating class :-
-# class Student:
-#     def __init__(self, full_name):
-#         self.name = full_name
-#
-#
-# # Creating Object
-# s1 = Student("Karan")
-# print(s1.name)
+Creating class :-
+class Student:
+    def __init__(self, full_name):
+        self.name = full_name
+
+
+# Creating Object
+s1 = Student("Karan")
+print(s1.name)
 
 
 """
@@ -51,26 +50,26 @@ The self parameter is a reference to the current instance of the class, and is u
 """
 
 # Ex:-
-# class Student :
-#     def __init__ (self):
-#         print(self)
-#         print("adding new Student in DataBase...")
-#
-#
-# s1 = Student()
-# print(s1)
+class Student :
+    def __init__ (self):
+        print(self)
+        print("adding new Student in DataBase...")
 
-# class Student:
-#     def __init__(self, name, marks):
-#         self.name = name
-#         self.marks = marks
-#         print("Adding new student in database...")
-#
-#
-# s1 = Student("karan", 97)
-# print(s1.name, s1.marks)  # karan
-# s2 = Student("arjun", 88)
-# print(s2.name, s2.marks)
+
+s1 = Student()
+print(s1)
+
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+        print("Adding new student in database...")
+
+
+s1 = Student("karan", 97)
+print(s1.name, s1.marks)  # karan
+s2 = Student("arjun", 88)
+print(s2.name, s2.marks)
 
 """
 Output :- 
@@ -90,7 +89,7 @@ obj.attr
 """
 Methods :- Methods are functions that belongs to objects.
 
-
+"""
 # Creating class 
 class Student:
     def __init__(self, full_name):
@@ -105,29 +104,29 @@ s1 = Student("karan")
 s1.Hello()
 
 # Types of methods :-
-1.Instance Method
-2.Class Method
-3. Static Method
-"""
+# 1.Instance Method
+# 2.Class Method
+# 3. Static Method
+
 
 
 # Example:-
-# class Student:
-#     college_name = "ABC College"
-#
-#     def __init__(self, name, marks):
-#         self.name = name
-#         self.marks = marks
-#
-#     def welcome(self):
-#         print("Welcome student", self.name)
-#
-#     def get_marks(self):
-#         return self.marks
-#
-#
-# s1 = Student("karan", 97)
-# s1.welcome()
-# print(s1.get_marks())
+class Student:
+    college_name = "ABC College"
+
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def welcome(self):
+        print("Welcome student", self.name)
+
+    def get_marks(self):
+        return self.marks
+
+
+s1 = Student("karan", 97)
+s1.welcome()
+print(s1.get_marks())
 
 
